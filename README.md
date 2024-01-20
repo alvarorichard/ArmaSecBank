@@ -53,6 +53,20 @@ Run the Application: After compilation, run the main application file using:
 java [main class name]
 ```
 
+## Running on docker
+
+To run your Java application using Docker, follow these steps:
+
+Build the Docker Image:
+```bash
+docker build -t arma-sec-bank .
+```
+
+Run the Docker Container:
+```bash
+docker run arma-sec-bank
+```
+
 ## Contributing
 Contributions to this project are welcome. Please follow these steps to contribute:
 
