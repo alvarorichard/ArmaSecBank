@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="https://i.imgur.com/SE9lpMS.png" alt="Imagem logo" />
+</p>
+
+
+
 # ArmaSecBank
 
 
@@ -55,7 +61,6 @@ Contributions to this project are welcome. Please follow these steps to contribu
 3. Commit your changes.
 4. Push to the branch.
 5. Submit a pull request
-
 
 
 
