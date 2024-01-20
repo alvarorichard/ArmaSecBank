@@ -26,5 +26,29 @@ To use this application:
 * [Additional features based on other classes like Conta, Pessoa, Transacao, etc.]
   
 
+## Running in IntelliJ IDEA
+
+1. Install IntelliJ IDEA: Download and install IntelliJ IDEA from JetBrains.
+2. Open the Project: Launch IntelliJ IDEA, select 'Open', and navigate to your project directory.
+3. Import Project: IntelliJ IDEA will automatically recognize the Java files. If prompted, set the project SDK to the appropriate Java version.
+4. Build and Run: Navigate to the main class (likely Sistema.java), right-click, and select 'Run [main class name].main()' to compile and run the project.
+   
+## Running in Terminal
+
+Compile the Project: Open your terminal, navigate to the project directory, and compile the Java files using:
+
+```bash
+javac *.java
+```
+
+Run the Application: After compilation, run the main application file using:
+
+```bash
+java [main class name]
+```
+
+
+  
+
 
 
