@@ -104,8 +104,8 @@ public class Sistema {
 
       System.out.println(vinho+"              _           _       \n" +
           "     /\\      | |         (_)      \n"+
-          "    /  \\   _ __ _ __ ___   __ _ \n" +
-          "   / /\\ \\ / _` | '_ ` _ \\| | '_ \n" +
+          "    /  \\   _ __ _ __ ___   __ ___ \n" +
+          "   / /\\ \\ / _` | '_ ` _ \\| | '_  \\\n" +
           "  / ____ \\ (_| | | | | | | | | | |\n" +
           " /_/    \\_\\__,_|_| |_| |_|_|_| |_|"+reset+"\n\n");
       System.out.println("Bem-vindo(a) ao ArmaSecBank. Escolha a opção desejada");
