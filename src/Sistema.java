@@ -10,6 +10,10 @@ import java.util.Scanner;
 public class Sistema {
   private ArrayList<Pessoa> pessoas = new ArrayList<>();
   private ArrayList<Banco> bancos = new ArrayList<>();
+
+  String vinho = "\u001B[31m"; // Código de escape ANSI para cor vermelha
+  String reset = "\u001B[0m"; 
+
   Scanner entrada = new Scanner(System.in);
 
   public static void main(String[] args) {
@@ -21,19 +25,17 @@ public class Sistema {
     while (true) {
       limparTela();
 
-
-      System.out.println("                                 _____           ____              _    ");
-      System.out.println("     /\\                         / ____|         |  _ \\            | |   ");
-      System.out.println("    /  \\   _ __ _ __ ___   __ _| (___   ___  ___| |_) | __ _ _ __ | | __");
-      System.out.println("   / /\\ \\ | '__| '_ ` _ \\ / _` |\\___ \\ / _ \\/ __|  _ < / _` | '_ \\| |/ /");
-      System.out.println("  / ____ \\| |  | | | | | | (_| |____) |  __/ (__| |_) | (_| | | | |   < ");
-      System.out.println(" /_/    \\_\\_|  |_| |_| |_|\\__,_|_____/ \\___|\\___|____/ \\__,_|_| |_|_|\\_\\");
-
+      System.out.println(vinho+"                                 _____           ____              _    \n" + //
+          "     /\\                         / ____|         |  _ \\            | |   \n" + //
+          "    /  \\   _ __ _ __ ___   __ _| (___   ___  ___| |_) | __ _ _ __ | | __\n" + //
+          "   / /\\ \\ | '__| '_ ` _ \\ / _` |\\___ \\ / _ \\/ __|  _ < / _` | '_ \\| |/ /\n" + //
+          "  / ____ \\| |  | | | | | | (_| |____) |  __/ (__| |_) | (_| | | | |   < \n" + //
+          " /_/    \\_\\_|  |_| |_| |_|\\__,_|_____/ \\___|\\___|____/ \\__,_|_| |_|_|\\_\\"+reset+"\n\n");
 
       System.out.println("Bem-vindo(a) ao ArmaSecBank. Escolha a opção desejada");
-      System.out.println("1 - Administrar o Sistema");
-      System.out.println("2 - Acessar como Cliente");
-      System.out.println("3 - Sair");
+      System.out.println(vinho+"1 -"+reset+" Administrar o Sistema");
+      System.out.println(vinho+"2 -"+reset+" Acessar como Cliente");
+      System.out.println(vinho+"3 -"+reset+" Sair");
       System.out.print("Sua opção: ");
       int opcao = Integer.parseInt(entrada.nextLine());
 
@@ -51,7 +53,7 @@ public class Sistema {
                   "  / _ \\ | | | \\ \\ / / _ \\| | __/ _` | '__/ _ \\ |  / _ \\ '_ ` _ \\  | '_ \\| '__/ _ \\ \\ / / _ \\\n" +
                   " |  __/ |_| |  \\ V / (_) | | || (_| | | |  __/ | |  __/ | | | | | | |_) | | |  __/\\ V /  __/\n" +
                   "  \\___|\\__,_|   \\_/ \\___/|_|\\__\\__,_|_|  \\___|_|  \\___|_| |_| |_| |_.__/|_|  \\___| \\_/ \\___|" ;
-          System.out.println(artFim);
+          System.out.println(vinho+artFim+reset+"\n\n");
 
           System.exit(0);
       }
@@ -66,7 +68,7 @@ public class Sistema {
 
     while (true) {
       limparTela();
-      System.out.println("\n:: L O G I N ::\n");
+      System.out.println(vinho+"\n:: L O G I N ::\n"+reset);
       System.out.print("Usuário: ");
       String usuario = entrada.nextLine();
       System.out.print("Senha: ");
@@ -100,20 +102,20 @@ public class Sistema {
     while (true) {
       limparTela();
 
-      System.out.println("              _           _       ");
-      System.out.println("     /\\      | |         (_)      ");
-      System.out.println("    /  \\   __| |_ __ ___  _ _ __  ");
-      System.out.println("   / /\\ \\ / _` | '_ ` _ \\| | '_ \\ ");
-      System.out.println("  / ____ \\ (_| | | | | | | | | | |");
-      System.out.println(" /_/    \\_\\__,_|_| |_| |_|_|_| |_|");
+      System.out.println(vinho+"              _           _       \n" +
+          "     /\\      | |         (_)      \n"+
+          "    /  \\   _ __ _ __ ___   __ _ \n" +
+          "   / /\\ \\ / _` | '_ ` _ \\| | '_ \n" +
+          "  / ____ \\ (_| | | | | | | | | | |\n" +
+          " /_/    \\_\\__,_|_| |_| |_|_|_| |_|"+reset+"\n\n");
       System.out.println("Bem-vindo(a) ao ArmaSecBank. Escolha a opção desejada");
 
 
-      System.out.println("1 - Gerenciar Bancos");
-      System.out.println("2 - Gerenciar Pessoas");
-      System.out.println("3 - Gerenciar Agências");
-      System.out.println("4 - Gerenciar Contas");
-      System.out.println("5 - Voltar Menu Anterior");
+      System.out.println(vinho+"1 -"+reset+" Gerenciar Bancos");
+      System.out.println(vinho+"2 -"+reset+" Gerenciar Pessoas");
+      System.out.println(vinho+"3 -"+reset+" Gerenciar Agências");
+      System.out.println(vinho+"4 -"+reset+" Gerenciar Contas");
+      System.out.println(vinho+"5 -"+reset+" Voltar Menu Anterior");
       System.out.print("Sua opção: ");
       int opcao = Integer.parseInt(entrada.nextLine());
 
@@ -145,14 +147,14 @@ public class Sistema {
     
     while(true){
       limparTela();
-      System.out.println("\n:: G E R E N C I A R   B A N C O S ::\n");
+      System.out.println(vinho+"\n:: G E R E N C I A R   B A N C O S ::\n"+reset);
       System.out.println("Escolha a opção desejada");
-      System.out.println("1 - Novo Banco");
-      System.out.println("2 - Listar Bancos");
-      System.out.println("3 - Pesquisar Banco");
-      System.out.println("4 - Excluir Banco");
-      System.out.println("5 - Atualizar Banco");
-      System.out.println("6 - Voltar Menu Anterior");
+      System.out.println(vinho+"1 -"+reset+" Novo Banco");
+      System.out.println(vinho+"2 -"+reset+" Listar Bancos");
+      System.out.println(vinho+"3 -"+reset+" Pesquisar Banco");
+      System.out.println(vinho+"4 -"+reset+" Excluir Banco");
+      System.out.println(vinho+"5 -"+reset+" Atualizar Banco");
+      System.out.println(vinho+"6 -"+reset+" Voltar Menu Anterior");
       System.out.print("Sua opção: ");
       int opcao = Integer.parseInt(entrada.nextLine());
     
@@ -279,14 +281,14 @@ public class Sistema {
     
     while(true){
       limparTela();
-      System.out.println("\n:: G E R E N C I A R   P E S S O A S ::\n");
+      System.out.println(vinho+"\n:: G E R E N C I A R   P E S S O A S ::\n"+reset);
       System.out.println("Escolha a opção desejada");
-      System.out.println("1 - Nova Pessoa (Futuro Cliente)");
-      System.out.println("2 - Listar Pessoas");
-      System.out.println("3 - Pesquisar Pessoa");
-      System.out.println("4 - Excluir Pessoa");
-      System.out.println("5 - Atualizar Pessoa");
-      System.out.println("6 - Voltar Menu Anterior");
+      System.out.println(vinho+"1 -"+reset+" Nova Pessoa (Futuro Cliente)");
+      System.out.println(vinho+"2 -"+reset+" Listar Pessoas");
+      System.out.println(vinho+"3 -"+reset+" Pesquisar Pessoa");
+      System.out.println(vinho+"4 -"+reset+" Excluir Pessoa");
+      System.out.println(vinho+"5 -"+reset+" Atualizar Pessoa");
+      System.out.println(vinho+"6 -"+reset+" Voltar Menu Anterior");
       System.out.print("Sua opção: ");
       int opcao = Integer.parseInt(entrada.nextLine());
     
@@ -439,16 +441,16 @@ public class Sistema {
 
     while(true){
       limparTela();
-      System.out.println("\n:: G E R E N C I A R   A G Ê N C I A S ::\n");
+      System.out.println(vinho+"\n:: G E R E N C I A R   A G Ê N C I A S ::\n"+reset);
       System.out.println("Banco selecionado: " + bancoAtual.getNome() + "\n");
       
       System.out.println("Escolha a opção desejada");
-      System.out.println("1 - Nova Agência");
-      System.out.println("2 - Listar Agências");
-      System.out.println("3 - Pesquisar Agência");
-      System.out.println("4 - Excluir Agência");
-      System.out.println("5 - Atualizar Agência");
-      System.out.println("6 - Voltar Menu Anterior");
+      System.out.println(vinho+"1 -"+reset+" Nova Agência");
+      System.out.println(vinho+"2 -"+reset+" Listar Agências");
+      System.out.println(vinho+"3 -"+reset+" Pesquisar Agência");
+      System.out.println(vinho+"4 -"+reset+" Excluir Agência");
+      System.out.println(vinho+"5 -"+reset+" Atualizar Agência");
+      System.out.println(vinho+"6 -"+reset+" Voltar Menu Anterior");
       System.out.print("Sua opção: ");
       int opcao = Integer.parseInt(entrada.nextLine());
     
@@ -618,17 +620,17 @@ public class Sistema {
 
     while(true){
       limparTela();
-      System.out.println("\n:: G E R E N C I A R   C O N T A S ::\n");
+      System.out.println(vinho+"\n:: G E R E N C I A R   C O N T A S ::\n"+reset);
       System.out.println("Banco selecionado: " + bancoAtual.getNome());
       System.out.println("Agência selecionada: " + agenciaAtual.getNumero() + " - " + agenciaAtual.getCidade() + "\n");
       
       System.out.println("Escolha a opção desejada");
-      System.out.println("1 - Abertura de Nova Conta");
-      System.out.println("2 - Listar Contas");
-      System.out.println("3 - Pesquisar Conta");
-      System.out.println("4 - Excluir Conta");
-      System.out.println("5 - Atualizar Conta");
-      System.out.println("6 - Voltar Menu Anterior");
+      System.out.println(vinho+"1 -"+reset+" Abertura de Nova Conta");
+      System.out.println(vinho+"2 -"+reset+" Listar Contas");
+      System.out.println(vinho+"3 -"+reset+" Pesquisar Conta");
+      System.out.println(vinho+"4 -"+reset+" Excluir Conta");
+      System.out.println(vinho+"5 -"+reset+" Atualizar Conta");
+      System.out.println(vinho+"6 -"+reset+" Voltar Menu Anterior");
       System.out.print("Sua opção: ");
       int opcao = Integer.parseInt(entrada.nextLine()); // lê a opção do usuário
     
@@ -808,7 +810,7 @@ public class Sistema {
 
     while (true) {
       limparTela();
-      System.out.println("\n:: L O G I N ::\n");
+      System.out.println(vinho+"\n:: L O G I N ::\n"+reset);
       System.out.print("Usuário: ");
       String usuario = entrada.nextLine();
       System.out.print("Senha: ");
@@ -855,15 +857,15 @@ public class Sistema {
     
     while(true){
       limparTela();
-      System.out.println("\n:: A C E S S O   D O   C L I E N T E ::\n");
+      System.out.println(vinho+"\n:: A C E S S O   D O   C L I E N T E ::\n"+reset);
       System.out.println("Cliente Selecionado: " + cliente.getNome() + "\n");
       System.out.println("Escolha a opção desejada");
-      System.out.println("1 - Listar Minhas Contas Bancárias");
-      System.out.println("2 - Efetuar Depósito");
-      System.out.println("3 - Efetuar Saque");
-      System.out.println("4 - Efetuar Transferência");
-      System.out.println("5 - Obter Extrato");
-      System.out.println("6 - Voltar Menu Anterior");
+      System.out.println(vinho+"1 -"+reset+" Listar Minhas Contas Bancárias");
+      System.out.println(vinho+"2 -"+reset+" Efetuar Depósito");
+      System.out.println(vinho+"3 -"+reset+" Efetuar Saque");
+      System.out.println(vinho+"4 -"+reset+" Efetuar Transferência");
+      System.out.println(vinho+"5 -"+reset+" Obter Extrato");
+      System.out.println(vinho+"6 -"+reset+" Voltar Menu Anterior");
       System.out.print("Sua opção: ");
       int opcao = Integer.parseInt(entrada.nextLine()); // lê a opção do usuário
     
@@ -984,16 +986,18 @@ public class Sistema {
             System.out.print("\nConta não encontrada. Não foi possível efetuar o depósito.\n");
           }
           else{
-            System.out.println("");
-            System.out.println("        E X T R A T O   B A N C Á R I O         ");
-            System.out.println("------------------------------------------------");
-            System.out.println("Cliente: " + conta.getCliente().getNome());
-            System.out.println("Banco: " + conta.getAgencia().getBanco().getNome());
-            System.out.println("Agência: " + conta.getAgencia().getNumero() + " - " + conta.getAgencia().getCidade());
-            System.out.println("Conta: " + conta.getNumero());
-            System.out.println("------------------------------------------------");
-            System.out.println("DATA        HISTORICO           DOC        VALOR");
-            System.out.println("------------------------------------------------");
+
+            System.out.println(vinho+"\n" +
+              "        E X T R A T O   B A N C Á R I O         \n" +
+              "------------------------------------------------\n" +
+              "Cliente: " + conta.getCliente().getNome() + "\n" + 
+              "Banco: " + conta.getAgencia().getBanco().getNome() + "\n" +
+              "Agência: " + conta.getAgencia().getNumero() + " - " + conta.getAgencia().getCidade() + "\n" +
+              "Conta: " + conta.getNumero() + "\n" +
+              "------------------------------------------------\n" +
+              "DATA        HISTORICO           DOC        VALOR\n" +
+              "------------------------------------------------"+reset);
+
  
             for(int i = 0; i < conta.getTransacoes().size(); i++){
               Transacao t = conta.getTransacoes().get(i);
@@ -1004,14 +1008,14 @@ public class Sistema {
                 String.format("%10s", valorFormatado.replace("R$ ", "")) + t.getLetra());
             }
             
-            System.out.println("------------------------------------------------");
+            System.out.println(vinho+"------------------------------------------------");
             String valorFormatado = nf.format(conta.getSaldo());
             System.out.println("SALDO ATUAL:" + String.format("%36s", valorFormatado.replace("R$ ", "")));
             valorFormatado = nf.format(conta.getLimite());
             System.out.println("LIMITE:" + String.format("%41s", valorFormatado.replace("R$ ", "")));
             valorFormatado = nf.format(conta.getSaldo() + conta.getLimite());
             System.out.println("SALDO + LIMITE:" + String.format("%33s", valorFormatado.replace("R$ ", "")));
-            System.out.println("------------------------------------------------");
+            System.out.println("------------------------------------------------"+reset);
           }
           
           break;  
