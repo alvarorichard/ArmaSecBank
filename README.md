@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/SE9lpMS.png" width="300" height="300" alt="Imagem logo" />
+  <img src="https://github.com/alvarorichard/ArmaSecBank/assets/102667323/e4689d85-a747-4334-a0ab-6c3abd95224b" alt="Imagem logo" />
 </p>
 
 # ArmaSecBank
