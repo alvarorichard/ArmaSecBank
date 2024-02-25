@@ -2,10 +2,7 @@
   <img src="https://i.imgur.com/SE9lpMS.png" width="300" height="300" alt="Imagem logo" />
 </p>
 
-
-
 # ArmaSecBank
-
 
 This project is a Java-based application designed for managing banking operations. It consists of several classes that represent different components of a bank, such as branches (Agencia), authentication (Autenticacao), bank accounts (Conta), customers (Pessoa), and transactions (Transacao).
 
@@ -75,10 +72,3 @@ Contributions to this project are welcome. Please follow these steps to contribu
 3. Commit your changes.
 4. Push to the branch.
 5. Submit a pull request
-
-
-
-  
-
-
-
