@@ -3,6 +3,11 @@
 </p>
 
 # ArmaSecBank
+[![GitHub license](https://img.shields.io/github/license/alvarorichard/ArmaSecBank)](alvarorichard/ArmaSecBank/blob/master/LICENSE)
+![GitHub stars](https://img.shields.io/github/stars/alvarorichard/ArmaSecBank)
+![Build Status](https://github.com/alvarorichard/ArmaSecBank/actions/workflows/ci.yml/badge.svg)
+![GitHub languages top](https://img.shields.io/github/languages/top/alvarorichard/ArmaSecBank)
+[![GitHub contributors](https://img.shields.io/github/contributors/alvarorichard/ArmaSecBank)](https://github.com/alvarorichard/ArmaSecBank/graphs/contributors)
 
 This project is a Java-based application designed for managing banking operations. It consists of several classes that represent different components of a bank, such as branches (Agencia), authentication (Autenticacao), bank accounts (Conta), customers (Pessoa), and transactions (Transacao).
 
