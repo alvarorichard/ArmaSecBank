@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v2
+  
+      - name: Construir imagem Docker
+        run: docker build -t arma-sec-bank .
+
+      - name: Executar container Docker
+        run: docker run --name arma-sec -d arma-sec-bank
+
+      - name: Verificar se o container está em execução
+        run: docker ps
+
+      - name: Parar e remover o container Docker
+        run: docker stop arma-sec && docker rm arma-sec
